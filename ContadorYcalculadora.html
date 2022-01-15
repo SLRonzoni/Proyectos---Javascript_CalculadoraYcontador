@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador y Calculadora</title>
+    <link rel="stylesheet" href="ContadorYcalculadora.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card img">
+            <h2 class="text-blue letra">Contador </h2>
+            <img src="./contador.jpg" alt="contador">
+            <h2 class="text-blue" id="mostrar">0</h2>
+            <button class="btnContador" onclick="aumentar()">Aumentar</button>
+            <button class="btnContador" onclick="disminuir()">Disminuir</button>
+            <button class="btnContador" onclick="resetear()">Resetear</button>
+        </div>
+
+        <div class="card img">
+            <h2 class="text-blue letra">Calculadora </h2>
+            
+            <div class="calculadora">
+              
+                <div class='display'>
+                    <div type="text" value=" " id="resultado" name="numero" ></div>
+                    <br>
+                    <div type="text" value=" " id="total" name="total" ></div>
+                </div>
+                <br> 
+                <div class="contenedorBotones">
+                    <div class="btnOperacionesBorrar">
+                       <button id="borrar" class="borrar" onclick="borrar()">CE</button>  
+                    </div>                     
+                    <br>
+                    <div class="btnNumeros">
+                        <div class="digitos">                       
+
+                            <button id="7" class="numeros">7</button>
+                            <button id="8" class="numeros">8</button>
+                            <button id="9" class="numeros">9</button>
+                            <button id="dividir" class="numeros">/</button>
+
+                            <button id="4" class="numeros">4</button> 
+                            <button id="5" class="numeros">5</button>
+                            <button id="6" class="numeros">6</button>
+                            <button id="multiplicar" class="numeros">*</button>
+
+                            <button id="1" class="numeros">1</button> 
+                            <button id="2" class="numeros">2</button>
+                            <button id="3" class="numeros">3</button> 
+                            <button id="restar" class="numeros">-</button>
+
+                            <button id="0" class="numeros">0</button> 
+                            <button id="coma" class="numeros">,</button> 
+                            <button id="igual" class="numeros">=</button>
+                            <button id="sumar" class="numeros" >+</button>
+                            
+                        </div>    
+                    </div>
+                       
+                </div>            
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="contador.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+   display: flex;   
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   height: 97vh;
+ 
+}
+
+.card{
+    border: 2px solid blue;
+    text-align: center;
+
+    padding: 12px;
+    border-radius: 12px;
+    margin: 12px;
+    height: 94%; 
+    width: 500px;
+    flex-grow: 1; 
+}
+
+.card img{
+    width: 50%;
+}
+
+.text-blue{
+    color: blue;
+    font-size: 66px;
+}
+
+.letra{
+    font-size: 36px;
+}
+
+.calculadora{
+    background: linear-gradient(to right, rgb(69, 211, 76),rgb(39, 75, 238));
+    border: 3px solid rgb(69, 211, 76);
+    box-shadow: 4px 4px 4px 2px rgba(15, 15, 15, 0.5);
+    border-radius: 12px;
+    margin: auto;
+    padding:3%;   
+    height: auto;
+    width:300px;
+}
+
+.btnContador{
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    align-content:  center;
+    padding: 4px;
+    margin: 8px;
+}
+
+.contenedorBotones{
+    height: 90%;
+    flex-grow: 1;
+}
+
+.operacion{
+    background-color:rgb(39, 75, 238);
+    box-shadow: 4px 4px 4px 2px rgba(15, 15, 15, 0.5);
+    color:rgb(69, 211, 76);
+    font-size: 30px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+    color:wheat;    
+}
+
+.borrar{
+    background-color: lightgray;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-left: 40px;
+    width: 38%;
+    padding: 4px;
+    color:rgb(39, 75, 238);
+}
+
+.btnOperacionesBorrar{
+    margin-left: 56%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.btnNumeros{
+    width:100%;
+    height: 80%;
+    flex-grow: 1;
+}
+ 
+.digitos{
+    margin-left: 2%;
+    display:grid;  
+    grid-template-columns: repeat(4,0.5rem 0.5rem 0.5rem 0.5rem);
+    gap: 0.5rem;  
+}
+
+.numeros{
+    background-color: rgb(69, 211, 76);
+    font-size: 23px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+    color:rgb(39, 75, 238);    
+    grid-column: span 4;
+}
+
+.display{
+    font-size: 20px;
+    background-color: aliceblue;
+    text-align:right;
+    width: 100%;
+    height: 80px;
+    padding: 5px 12px 5px 12px ;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    border-top-color: transparent;
+    box-shadow: 4px 4px 4px 2px rgba(15, 15, 15, 0.5);
+}
+
+.letraResultado{
+    font-size: 30px !important;
+}
